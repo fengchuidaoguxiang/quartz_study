@@ -6,6 +6,7 @@ import org.slf4j.LoggerFactory;
 
 import java.lang.reflect.Constructor;
 
+@PersistJobDataAfterExecution//多次调用Job的时候，会对Job进行持久化，即保存一个数据的信息
 public class HelloJob implements Job {
     private final static Logger LOG = LoggerFactory.getLogger(HelloJob.class);
 
@@ -13,6 +14,12 @@ public class HelloJob implements Job {
 
     public void setMessage(String message) {
         this.message = message;
+    }
+
+    private Integer count;
+
+    public void setCount(Integer count) {
+        this.count = count;
     }
 
     public HelloJob(){
@@ -49,5 +56,10 @@ public class HelloJob implements Job {
         System.out.println("当前任务的执行时间："+jobExecutionContext.getFireTime());
         System.out.println("下次任务的执行时间："+jobExecutionContext.getNextFireTime());
 
+        //输出count
+        ++count;//累加count
+        System.out.println("count的数量："+count);
+        //将count存放到JobDataMap中
+        jobExecutionContext.getJobDetail().getJobDataMap().put("count",count);
     }
 }

@@ -1,0 +1,36 @@
+21:24:30.890 [main] INFO  org.quartz.impl.StdSchedulerFactory.instantiate(StdSchedulerFactory.java:1208) - Using default implementation for ThreadExecutor
+21:24:30.899 [main] INFO  org.quartz.simpl.SimpleThreadPool.initialize(SimpleThreadPool.java:268) - Job execution threads will use class loader of thread: main
+21:24:30.911 [main] INFO  org.quartz.core.SchedulerSignalerImpl.<init>(SchedulerSignalerImpl.java:61) - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+21:24:30.912 [main] INFO  org.quartz.core.QuartzScheduler.<init>(QuartzScheduler.java:229) - Quartz Scheduler v.2.3.1 created.
+21:24:30.912 [main] INFO  org.quartz.simpl.RAMJobStore.initialize(RAMJobStore.java:155) - RAMJobStore initialized.
+21:24:30.913 [main] INFO  org.quartz.core.QuartzScheduler.initialize(QuartzScheduler.java:294) - Scheduler meta-data: Quartz Scheduler (v2.3.1) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+21:24:30.913 [main] INFO  org.quartz.impl.StdSchedulerFactory.instantiate(StdSchedulerFactory.java:1362) - Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+21:24:30.913 [main] INFO  org.quartz.impl.StdSchedulerFactory.instantiate(StdSchedulerFactory.java:1366) - Quartz scheduler version: 2.3.1
+21:24:30.917 [main] INFO  org.quartz.core.QuartzScheduler.start(QuartzScheduler.java:547) - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+21:24:30.917 [main] INFO  org.quartz.core.QuartzScheduler.shutdown(QuartzScheduler.java:666) - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED shutting down.
+21:24:30.917 [main] INFO  org.quartz.core.QuartzScheduler.standby(QuartzScheduler.java:585) - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED paused.
+21:24:30.918 [main] INFO  org.quartz.core.QuartzScheduler.shutdown(QuartzScheduler.java:740) - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED shutdown complete.
+21:24:39.519 [main] INFO  org.quartz.impl.StdSchedulerFactory.instantiate(StdSchedulerFactory.java:1208) - Using default implementation for ThreadExecutor
+21:24:39.522 [main] INFO  org.quartz.simpl.SimpleThreadPool.initialize(SimpleThreadPool.java:268) - Job execution threads will use class loader of thread: main
+21:24:39.530 [main] INFO  org.quartz.core.SchedulerSignalerImpl.<init>(SchedulerSignalerImpl.java:61) - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+21:24:39.530 [main] INFO  org.quartz.core.QuartzScheduler.<init>(QuartzScheduler.java:229) - Quartz Scheduler v.2.3.1 created.
+21:24:39.531 [main] INFO  org.quartz.simpl.RAMJobStore.initialize(RAMJobStore.java:155) - RAMJobStore initialized.
+21:24:39.532 [main] INFO  org.quartz.core.QuartzScheduler.initialize(QuartzScheduler.java:294) - Scheduler meta-data: Quartz Scheduler (v2.3.1) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+21:24:39.532 [main] INFO  org.quartz.impl.StdSchedulerFactory.instantiate(StdSchedulerFactory.java:1362) - Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+21:24:39.532 [main] INFO  org.quartz.impl.StdSchedulerFactory.instantiate(StdSchedulerFactory.java:1366) - Quartz scheduler version: 2.3.1
+21:24:39.536 [main] INFO  org.quartz.core.QuartzScheduler.start(QuartzScheduler.java:547) - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+21:24:39.538 [DefaultQuartzScheduler_Worker-1] INFO  com.HelloJob.execute(HelloJob.java:14) - 2222
