@@ -1,4 +1,4 @@
-package com;
+package com.job;
 
 import org.joda.time.DateTime;
 import org.quartz.*;

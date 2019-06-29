@@ -1,28 +1,29 @@
-package com;
+package com.main;
 
+import com.job.HelloJob;
 import org.quartz.*;
 import org.quartz.impl.StdSchedulerFactory;
 
-public class HelloSchedulerDemo2 {
+public class HelloSchedulerDemo3 {
 
     public static void main(String[] args) throws Exception {
-
         JobDetail job = JobBuilder.newJob(HelloJob.class)
                 .withIdentity("dummyJobName", "group1").build();
 
 
-        // Trigger the job to run on the next round minute
         Trigger trigger = TriggerBuilder
                 .newTrigger()
                 .withIdentity("dummyTriggerName", "group1")
                 .withSchedule(
-                        SimpleScheduleBuilder.simpleSchedule()
-                                .withIntervalInSeconds(2).repeatForever())
+                        CronScheduleBuilder.cronSchedule("0/2 * * * * ?"))
                 .build();
 
-        // schedule it
+        //schedule it
         Scheduler scheduler = new StdSchedulerFactory().getScheduler();
         scheduler.start();
+        scheduler.scheduleJob(job, trigger);
+
+
 
 
     }

@@ -1,10 +1,8 @@
-package com;
+package com.job;
 
 import org.quartz.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-
-import java.lang.reflect.Constructor;
 
 @PersistJobDataAfterExecution//多次调用Job的时候，会对Job进行持久化，即保存一个数据的信息
 public class HelloJob implements Job {
